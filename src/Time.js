@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react"
+import za from './zaWarudo.gif'
 
 function Time() {
     const [time, setTime] = useState(0)
-    const subtitle = <h2 className="subtitle">ZA WARUDO !!!</h2>
+    const subtitle = (<>
+        <h2 className="subtitle">ZA WARUDO !!!</h2>
+        <img src={ za } />
+    </>)
 
     useEffect(() => {
         let interval = setInterval(() => setTime(time + 1), 1000)
