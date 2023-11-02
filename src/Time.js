@@ -5,7 +5,7 @@ function Time() {
     const [time, setTime] = useState(0)
     const subtitle = (<>
         <h2 className="subtitle">ZA WARUDO !!!</h2>
-        <img src={ za } />
+        <img src={ za } alt="Za warudo !!!" />
     </>)
 
     useEffect(() => {
